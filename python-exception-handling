@@ -1,0 +1,12 @@
+try:
+ num1=int (input("Enter your number:"))
+ num2=int (input("other number:"))
+ print(num1/num2)
+except ZeroDivisionError:
+    print("❌ You cannot divide by zero!")
+except ValueError:
+   print("❌ Please enter numbers only!")
+else:
+   print("✅ Operation completed successfully!")
+finally:
+   print("Program finished.")
